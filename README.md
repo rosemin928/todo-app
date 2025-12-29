@@ -1,16 +1,52 @@
-# React + Vite
+# 투두리스트 (Todo App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 네이버 스타일의 깔끔한 할 일 관리 웹 애플리케이션
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-7.2.4-646CFF?logo=vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 미리보기
 
-## React Compiler
+네이버의 시그니처 그린 컬러와 미니멀한 디자인을 적용한 투두리스트입니다.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 주요 기능
 
-## Expanding the ESLint configuration
+- **할 일 추가** - 입력창에 할 일을 입력하고 추가 버튼 또는 Enter 키로 등록
+- **완료 체크** - 체크박스를 클릭하여 완료/미완료 상태 전환
+- **할 일 삭제** - X 버튼을 클릭하여 할 일 삭제
+- **자동 저장** - 브라우저 로컬 스토리지에 자동 저장 (새로고침해도 유지!)
+- **통계 표시** - 전체 할 일 개수와 완료된 할 일 개수 실시간 표시
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 기술 스택
+
+| 분류 | 기술 |
+|------|------|
+| 프레임워크 | React 19 |
+| 빌드 도구 | Vite |
+| 스타일링 | CSS (네이버 스타일) |
+| 배포 | GitHub Pages |
+
+## 프로젝트 구조
+
+```
+todo-app/
+├── src/
+│   ├── App.jsx        # 메인 컴포넌트 (투두리스트 로직)
+│   ├── App.css        # 네이버 스타일 CSS
+│   ├── index.css      # 전역 스타일
+│   └── main.jsx       # 엔트리 포인트
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## 디자인 특징
+
+- **메인 컬러**: 네이버 그린 (`#03C75A`)
+- **배경**: 깔끔한 회색 (`#f5f6f8`)
+- **폰트**: 맑은 고딕 기반 시스템 폰트
+- **UI**: 미니멀한 보더와 그림자, 심플한 애니메이션
+
+---
+
+Made with React + Vite
